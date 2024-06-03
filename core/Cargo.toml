@@ -1,0 +1,11 @@
+[package]
+name = "core"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate_type = ["cdylib"]
+
+[dependencies]
+zxcvbn = { git = "https://github.com/hculea/zxcvbn-rs.git", branch = "add-support-for-non-js-wasm-targets", features = ["custom_wasm_env"]}
+extism-pdk = "1.0.0"
